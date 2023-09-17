@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "sourceMap": true,
+    "jsx": "preserve",
+    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@Assets/*": [
+        "assets/*"
+      ],
+      "@Components/*": [
+        "components/*"
+      ],
+      "@Configs/*": [
+        "configs/*"
+      ],
+      "@Enums/*": [
+        "enums/*"
+      ],
+      "@Factories": [
+        "factories"
+      ],
+      "@Hooks/*": [
+        "hooks/*"
+      ],
+      "@Interfaces/*": [
+        "interfaces/*"
+      ],
+      "@Routes/*": [
+        "routes/*"
+      ],
+      "@Services": [
+        "services"
+      ],
+      "@Utils/*": [
+        "utils/*"
+      ],
+      "@Constants/*": [
+        "constants/*"
+      ]
+    },
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+    // "@type/react-nice-dates.d.ts"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ]
+}
