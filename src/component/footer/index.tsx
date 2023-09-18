@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <Box bgColor={"gray.50"} minH={"80"} alignItems={"center"} px={"72"} pt={"12"}>
+    <Box bgColor={"gray.50"} minH={"80"} alignItems={"center"} px={{  sm:"10",lg:"20", "2xl": "72" }} pt={"12"}>
         <Box>
             <Flex>
                 <Box flex={"2"}>
