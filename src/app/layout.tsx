@@ -1,4 +1,6 @@
 import { Providers } from "./providers";
+import Header from "component/header";
+import Footer from "component/footer";
 
 export default function RootLayout({
   children,
@@ -9,7 +11,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
+          <Header/>
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>
